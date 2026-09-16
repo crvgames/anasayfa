@@ -1,30 +1,34 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="tr">
 <head>
- <link rel="icon" href="favicon0.png" type="image/png">
- <meta name="google-site-verification" content="kLCS6z8Lb3jZLTBq6-TJDJSFEFtRTSW3B3IMBYlx5wo" />
+    <link rel="icon" href="favicon0.png" type="image/png">
+    <meta name="google-site-verification" content="kLCS6z8Lb3jZLTBq6-TJDJSFEFtRTSW3B3IMBYlx5wo" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRVGAMES</title>
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=OOM7V2eyznCFjLYP0lR7rxziMf75emoYFiguoCq1QsIylsBSSI_QjW-kF7pPmzb5tDfPmMasDqH8yR6tg2Lk3Q" charset="UTF-8"></script><style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=JThtx1UgJcZ7JHTKlDH45laa_5eSXDkqyk5CBORWLY5qazj3BeJkMUL-wxeDU9W6LFlgg6KNhcu63CMCMC6e3w" charset="UTF-8"></script>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=OOM7V2eyznCFjLYP0lR7rxziMf75emoYFiguoCq1QsIylsBSSI_QjW-kF7pPmzb5tDfPmMasDqH8yR6tg2Lk3Q" charset="UTF-8"></script>
+    <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-             background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('d.jpeg');
-             background-repeat: no-repeat;
-             background-position: center center;
-             background-attachment: fixed;
-             background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('d.jpeg'); 
+            background-repeat: no-repeat; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            background-size: cover;
             color: white;
             text-align: center;
             margin: 0;
             padding: 20px;
         }
+
         h1 {
             color: #00e5ff;
             margin-bottom: 40px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
+
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -32,6 +36,7 @@
             max-width: 800px;
             margin: 0 auto;
         }
+
         .btn {
             background-color: #1e1e1e;
             color: white;
@@ -41,21 +46,51 @@
             border-radius: 10px;
             font-weight: bold;
             transition: all 0.3s ease;
+            display: inline-block;
         }
+
         .btn:hover {
             background-color: #00e5ff;
             color: #121212;
             transform: scale(1.05);
             border-color: #00e5ff;
         }
+
+        /* Tam Ekran Buton Stili */
+        .fs-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            background-color: #00e5ff;
+            color: #121212;
+            border: none;
+            padding: 12px 18px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .fs-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 229, 255, 0.5);
+        }
     </style>
 </head>
 <body>
-<a href="https://forms.gle/46oVr6dW8WsrcS7LA" class="btn">BİZİ DEĞERLENDİRİN⭐</a>
-<a href="https://www.termsfeed.com/live/93a0ae81-ef0d-4858-b19a-b1aabde938a4" class="btn">GİZLİLİK POLİTİKASI📕</a> 
+
+    <!-- Tam Ekran Butonu -->
+    <button id="fullscreenBtn" class="fs-btn">⛶ Tam Ekran Yap</button>
+
+    <a href="https://forms.gle/46oVr6dW8WsrcS7LA" class="btn">BİZİ DEĞERLENDİRİN⭐</a>
+    <a href="https://www.termsfeed.com/live/93a0ae81-ef0d-4858-b19a-b1aabde938a4" class="btn">GİZLİLİK POLİTİKASI📕</a>     
+    
     <h1>CRV GAMES Ana Sayfa</h1>
     <p>Bizi tercih ettiğiniz için teşekkür eder ve bilgisayardan girmenizi öneririz.</p>     
-
+    
     <div class="container">
         <a href="https://crvgames.github.io/cg/" class="btn">CG(toplu oyunlar)🎈🎮🕹</a>
         <a href="https://crvgames.github.io/CFO/" class="btn">CFO⚽</a>
@@ -74,5 +109,36 @@
         <a href="https://crvgames.github.io/kacisi/" class="btn">Tapınak kaçışı🏃‍♂️</a>
         <a href="https://crvgames.github.io/oyunrehberi/" class="btn">oyun rehberi📕</a>
     </div>
+
+    <script>
+        const fsBtn = document.getElementById('fullscreenBtn');
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.error(`Tam ekrana geçilemedi: ${err.message}`);
+                });
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        fsBtn.addEventListener('click', toggleFullscreen);
+
+        // Ekran moduna göre buton yazısını ve rengini dinamik değiştirir
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement) {
+                fsBtn.innerText = '🗗 Tam Ekrandan Çık';
+                fsBtn.style.backgroundColor = '#ff4757';
+                fsBtn.style.color = '#ffffff';
+            } else {
+                fsBtn.innerText = '⛶ Tam Ekran Yap';
+                fsBtn.style.backgroundColor = '#00e5ff';
+                fsBtn.style.color = '#121212';
+            }
+        });
+    </script>
 </body>
 </html>
